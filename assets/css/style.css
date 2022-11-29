@@ -6,9 +6,9 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    background-color: black;
+    background-color: var(--primary--color);
     opacity: 0.9;
-    color: seashell;
+    color: var(--font--color);
     font-size: 22px;
     font-family: Helvetica;
     text-align: center;
@@ -23,8 +23,40 @@ header {
     width: 1200px;
     height: 69px;
     padding: 0 10px;
-    background-color: black;
-    border-bottom: 1px solid seashell;
+    background-color: var(--secondary--color);
+    border-bottom: 1px solid var(--font--color);
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+header #btn1 {
+    color: #333;
+}
+
+header #btn2 {
+    color: slategray;
+}
+
+header #btn3 {
+    color: indianred;
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all .25s;
+
+}
+
+svg:hover {
+    border: 3px solid whitesmoke;
+    border-radius: 20%;
 }
 
 header div ul {
@@ -36,7 +68,7 @@ header div ul {
 }
 
 header div ul li a {
-    color: white;
+    color: var(--font--color);
 }
 
 /* sections */
@@ -57,7 +89,7 @@ section {
 }
 
 #section1 #our-mission {
-    background-color: black;
+    background-color: var(--secondary--color);
 }
 
 section #tea-of-the-month {
@@ -96,7 +128,7 @@ section #tea-of-the-month div.pictures {
 }
 
 #locations div {
-    background-color: black;
+    background-color: var(--secondary--color);
     width: 300px;
     opacity: 1;
     line-height: 60px;
