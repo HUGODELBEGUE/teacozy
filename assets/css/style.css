@@ -46,6 +46,10 @@ header #btn3 {
     color: indianred;
 }
 
+header #btn4 {
+    color: #f2ad22;
+}
+
 svg {
     width: 30px;
     height: 30px;
